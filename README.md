@@ -5,7 +5,7 @@ This Perl code implements a SOCKS5 proxy server that listens for incoming connec
 
 When a client attempts to connect to the server, the server checks if the client supports any of the available authentication methods (no authentication or login/password authentication). If a suitable method is found, the server establishes a connection with the target server and begins forwarding data between the client and the target server.
 
-The code uses the `IO::Select` module for working with sockets and the threads module for creating and managing threads. It includes several functions, including:
+The code uses the `IO::Select` module for working with sockets and the `threads` module for creating and managing threads. It includes several functions, including:
 
 - `main`: the main function that creates threads for processing incoming connections.
 - `replenish`: a function that creates additional threads if the number of free threads is less than the specified value.
@@ -19,3 +19,5 @@ To run this code, enter the following command:
 `perl socks5.pl host port login password`
 
 Note that this code is designed for educational purposes and should not be used in production environments without proper modifications and security measures. 😊
+
+This code is distributed under the [MIT License](LICENSE), which allows for free use, modification, and distribution of the code as long as the original copyright notice and license are included.
